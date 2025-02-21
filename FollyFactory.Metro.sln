@@ -1,0 +1,71 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35527.113
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{D85BFAFE-60FB-4FC3-9F14-08D8CA677A9A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{6B1ACA62-B188-4DFE-8EEA-41D9743E0A29}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "misc", "misc", "{888634DD-3567-45B9-9FFE-8C5315D5FBC0}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+		Directory.Build.props = Directory.Build.props
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FollyFactory.Metro", "src\FollyFactory.Metro\FollyFactory.Metro.csproj", "{EBE4ED37-A32F-4A5A-8015-34D83F517CA0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FollyFactory.Metro.DependencyInjection.Microsoft", "src\FollyFactory.Metro.DependencyInjection.Microsoft\FollyFactory.Metro.DependencyInjection.Microsoft.csproj", "{5E1390A7-AF32-4E5E-9DF5-7024209C75D1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "example", "example", "{07042B12-2DA7-4864-86B4-D92F6E968A64}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{F070AF3F-EA92-43E6-9DB5-FAAD338721F8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{5C07176F-177D-4A2A-81CF-145571279FBA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FollyFactory.Metro.Example.Api", "example\src\FollyFactory.Metro.Example.Api\FollyFactory.Metro.Example.Api.csproj", "{97E0F907-9667-45FB-8A02-50D6DC6A467C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FollyFactory.Metro.Example.Application", "example\src\FollyFactory.Metro.Example.Application\FollyFactory.Metro.Example.Application.csproj", "{2129FE6A-5887-4AC3-9A18-0371C8940896}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FollyFactory.Metro.UnitTests", "tests\FollyFactory.Metro.UnitTests\FollyFactory.Metro.UnitTests.csproj", "{1DAAAF33-CC36-4D02-A663-E2E60234410A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EBE4ED37-A32F-4A5A-8015-34D83F517CA0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EBE4ED37-A32F-4A5A-8015-34D83F517CA0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EBE4ED37-A32F-4A5A-8015-34D83F517CA0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EBE4ED37-A32F-4A5A-8015-34D83F517CA0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E1390A7-AF32-4E5E-9DF5-7024209C75D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E1390A7-AF32-4E5E-9DF5-7024209C75D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E1390A7-AF32-4E5E-9DF5-7024209C75D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E1390A7-AF32-4E5E-9DF5-7024209C75D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97E0F907-9667-45FB-8A02-50D6DC6A467C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97E0F907-9667-45FB-8A02-50D6DC6A467C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97E0F907-9667-45FB-8A02-50D6DC6A467C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97E0F907-9667-45FB-8A02-50D6DC6A467C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2129FE6A-5887-4AC3-9A18-0371C8940896}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2129FE6A-5887-4AC3-9A18-0371C8940896}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2129FE6A-5887-4AC3-9A18-0371C8940896}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2129FE6A-5887-4AC3-9A18-0371C8940896}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1DAAAF33-CC36-4D02-A663-E2E60234410A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1DAAAF33-CC36-4D02-A663-E2E60234410A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1DAAAF33-CC36-4D02-A663-E2E60234410A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1DAAAF33-CC36-4D02-A663-E2E60234410A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{EBE4ED37-A32F-4A5A-8015-34D83F517CA0} = {D85BFAFE-60FB-4FC3-9F14-08D8CA677A9A}
+		{5E1390A7-AF32-4E5E-9DF5-7024209C75D1} = {D85BFAFE-60FB-4FC3-9F14-08D8CA677A9A}
+		{F070AF3F-EA92-43E6-9DB5-FAAD338721F8} = {07042B12-2DA7-4864-86B4-D92F6E968A64}
+		{5C07176F-177D-4A2A-81CF-145571279FBA} = {07042B12-2DA7-4864-86B4-D92F6E968A64}
+		{97E0F907-9667-45FB-8A02-50D6DC6A467C} = {F070AF3F-EA92-43E6-9DB5-FAAD338721F8}
+		{2129FE6A-5887-4AC3-9A18-0371C8940896} = {F070AF3F-EA92-43E6-9DB5-FAAD338721F8}
+		{1DAAAF33-CC36-4D02-A663-E2E60234410A} = {6B1ACA62-B188-4DFE-8EEA-41D9743E0A29}
+	EndGlobalSection
+EndGlobal

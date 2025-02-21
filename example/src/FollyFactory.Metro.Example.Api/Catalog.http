@@ -1,0 +1,45 @@
+@FollyFactory.Metro.Example.Api_HostAddress = http://localhost:5656
+
+# Catalog Products API
+
+# Get all products
+GET {{FollyFactory.Metro.Example.Api_HostAddress}}/catalog/products
+Accept: application/json
+
+###
+
+# Get product by ID
+GET {{FollyFactory.Metro.Example.Api_HostAddress}}/catalog/products/db2c4b69-1aa6-4015-8a80-bd933fbd2c3a
+Accept: application/json
+
+###
+
+# Create a new product
+POST {{FollyFactory.Metro.Example.Api_HostAddress}}/catalog/products
+Accept: application/json
+Content-Type: application/json
+
+{
+  "name": "Magic Shoes",
+  "description": "A super-fun addition to their weekday wardrobe, our kids’ school shoe Lock Magic is perfect for those little fashionistas.",
+  "price": 100.0
+}
+
+###
+
+# Update an existing product
+PUT {{FollyFactory.Metro.Example.Api_HostAddress}}/catalog/products/db2c4b69-1aa6-4015-8a80-bd933fbd2c3a
+Accept: application/json
+Content-Type: application/json
+
+{
+  "name": "Magic Shoes Updated",
+  "description": "Updated description for the Magic Shoes.",
+  "price": 120.0
+}
+
+###
+
+# Delete a product
+DELETE {{FollyFactory.Metro.Example.Api_HostAddress}}/catalog/products/db2c4b69-1aa6-4015-8a80-bd933fbd2c3a
+Accept: application/json
