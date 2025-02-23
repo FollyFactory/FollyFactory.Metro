@@ -35,7 +35,11 @@ jobs:
       #     tag: ${{ github.ref }}
         
       - name: Build NuGet package
-        run: dotnet pack "src/**/*.csproj" --configuration Release --no-build --output ./nuget
+        run: |
+          $version = "${{ github.ref }}".TrimStart('refs/tags/v')
+          Get-ChildItem -Path src -Filter *.csproj -Recurse | 
+          ForEach-Object { dotnet pack $_.FullName --configuration Release --no-build --output ./nuget -p:Version=$version }
+        shell: pwsh
       
       - name: Push NuGet package
-        run: dotnet nuget push "./nuget/*.nupkg" --api-key ${{ secrets.NUGET_API_KEY }} --source https://api.nuget.org/v3/index.json --skip-duplicate
+        run: dotnet nuget push "./nuget/*.nupkg" --api-key ${{ secrets.NUGET_API_KEY }} --source https://api.nuget.org/v3/index.json --skip-duplicate --exclude-symbols
