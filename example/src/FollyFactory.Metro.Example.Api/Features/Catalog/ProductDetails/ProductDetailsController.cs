@@ -1,4 +1,5 @@
 ﻿using FollyFactory.Metro.Example.Application.Features.Catalog.Queries;
+using FollyFactory.Metro.Example.Application.Features.Catalog.Views;
 using FollyFactory.Metro.Queries;
 using Microsoft.AspNetCore.Mvc;
 
@@ -19,7 +20,7 @@ public class ProductDetailsController : ControllerBase
     }
 
     [HttpGet("{productId:guid}", Name = RouteName)]
-    [ProducesResponseType(StatusCodes.Status200OK)]
+    [ProducesResponseType(typeof(ProductDetailsView), StatusCodes.Status200OK)]
     [ProducesResponseType(StatusCodes.Status404NotFound)]
     public async Task<IActionResult> GetProductById(Guid productId, CancellationToken cancellationToken)
     {

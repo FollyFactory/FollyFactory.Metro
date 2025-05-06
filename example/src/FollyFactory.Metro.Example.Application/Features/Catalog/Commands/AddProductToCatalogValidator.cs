@@ -5,7 +5,7 @@ namespace FollyFactory.Metro.Example.Application.Features.Catalog.Commands;
 
 public class AddProductToCatalogValidator : ICommandValidator<AddProductToCatalog>
 {
-    public Task<IValidationResult> ValidateCommand(AddProductToCatalog command)
+    public Task<IValidationResult> ValidateCommand(AddProductToCatalog command, CancellationToken cancellationToken)
     {
         throw new NotImplementedException();
     }

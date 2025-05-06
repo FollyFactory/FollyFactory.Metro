@@ -1,8 +1,9 @@
 ﻿namespace FollyFactory.Metro.Validation;
 public interface IValidationResult
 {
-    List<ValidationError> Errors { get; set; }
+    List<ValidationError> Errors { get;  }
+    void AddError(string propertyName, string errorMessage);
     bool IsValid { get; set; }
 }
 
-public record ValidationError(string PropertyName, string ErrorMessage);
+public record ValidationError(string PropertyName, List<string> ErrorMessages);

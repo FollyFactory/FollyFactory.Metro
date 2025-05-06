@@ -15,7 +15,7 @@ public abstract class ApplicationValidationException : Exception
 
         Errors = errorsByPropertyName.ToDictionary(x => x.Key, x =>
         {
-            return string.Join(';', x.Select(r => r.ErrorMessage));
+            return string.Join(';', x.Select(r => r.ErrorMessages));
         });
     }
 
