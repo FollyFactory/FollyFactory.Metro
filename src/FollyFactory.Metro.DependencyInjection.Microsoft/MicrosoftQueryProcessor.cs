@@ -50,7 +50,7 @@ public class MicrosoftQueryProcessor : IQueryProcessor
 
         public override Task<QueryResult<TResult?>> Handle(IQuery<TResult> query, CancellationToken cancellationToken)
         {
-            return _handler.Handle((TQuery)query, cancellationToken);
+            return _handler.HandleAsync((TQuery)query, cancellationToken);
         }
     }
 }

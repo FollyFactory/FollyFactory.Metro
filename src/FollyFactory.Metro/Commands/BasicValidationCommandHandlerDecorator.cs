@@ -15,7 +15,7 @@ public class BasicValidationCommandHandlerDecorator<TCommand> : ICommandHandler<
 
     public async Task<CommandResult> HandleAsync(TCommand command, CancellationToken cancellationToken)
     {
-        if (_validator == null)
+        if (_validator is null)
         {
             return await _decoratedCommandHandler.HandleAsync(command, cancellationToken);
         }

@@ -5,7 +5,7 @@ namespace FollyFactory.Metro.Example.Application.Features.Catalog.Queries;
 
 public class SearchProductsHandler: IQueryHandler<SearchProducts, PagedViewResult<ProductSearchView>>
 {
-    public Task<QueryResult<PagedViewResult<ProductSearchView>?>> Handle(SearchProducts query, CancellationToken cancellationToken)
+    public Task<QueryResult<PagedViewResult<ProductSearchView>?>> HandleAsync(SearchProducts query, CancellationToken cancellationToken)
     {
 
         ProductSearchView[] products =
@@ -15,6 +15,6 @@ public class SearchProductsHandler: IQueryHandler<SearchProducts, PagedViewResul
         ];
         var paged = new PagedViewResult<ProductSearchView>(products, 2, query.Page, query.PageSize);
 
-        return Task.FromResult(new QueryResult<PagedViewResult<ProductSearchView>?>(true, true, paged));
+        return Task.FromResult(new QueryResult<PagedViewResult<ProductSearchView>?>(true, paged));
     }
 }

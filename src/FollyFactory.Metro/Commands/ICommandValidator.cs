@@ -4,5 +4,5 @@ namespace FollyFactory.Metro.Commands;
 
 public interface ICommandValidator<in TCommand>
 {
-    Task<IValidationResult> ValidateCommand(TCommand command, CancellationToken cancellationToken);
+    Task<IValidationResult> ValidateCommand(TCommand command, CancellationToken cancellationToken = default);
 }

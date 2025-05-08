@@ -101,40 +101,40 @@ public class BasicValidationCommandHandlerDecoratorTests
         result.ValidationErrors["Age"].Length.ShouldBe(1);
         result.ValidationErrors["Age"][0].ShouldBe("Must be 18 or older");
     }
-}
 
-internal record TestCommand1(string Name, int Age) : ICommand;
+    private record TestCommand1(string Name, int Age) : ICommand;
 
-internal class TestCommand1Validator : ICommandValidator<TestCommand1>
-{
-    public Task<IValidationResult> ValidateCommand(TestCommand1 command, CancellationToken cancellationToken)
+    private class TestCommand1Validator : ICommandValidator<TestCommand1>
     {
-        BasicValidationResult result = new();
-        if (string.IsNullOrEmpty(command.Name))
+        public Task<IValidationResult> ValidateCommand(TestCommand1 command, CancellationToken cancellationToken)
         {
-            result.AddError(nameof(command.Name), "Name is required");
-        }
+            BasicValidationResult result = new();
+            if (string.IsNullOrEmpty(command.Name))
+            {
+                result.AddError(nameof(command.Name), "Name is required");
+            }
 
-        if (command.Name == "Multi")
-        {
-            result.AddError(nameof(command.Name), "Multi error 1");
-            result.AddError(nameof(command.Name), "Multi error 2");
-        }
+            if (command.Name == "Multi")
+            {
+                result.AddError(nameof(command.Name), "Multi error 1");
+                result.AddError(nameof(command.Name), "Multi error 2");
+            }
 
-        if (command.Age < 18)
-        {
-            result.AddError(nameof(command.Age), "Must be 18 or older");
-        }
+            if (command.Age < 18)
+            {
+                result.AddError(nameof(command.Age), "Must be 18 or older");
+            }
 
-        result.IsValid = result.Errors.Count == 0;
-        return Task.FromResult<IValidationResult>(result);
+            result.IsValid = result.Errors.Count == 0;
+            return Task.FromResult<IValidationResult>(result);
+        }
     }
-}
 
-internal class TestCommand1Handler : ICommandHandler<TestCommand1>
-{
-    public Task<CommandResult> HandleAsync(TestCommand1 command, CancellationToken cancellationToken)
+    private class TestCommand1Handler : ICommandHandler<TestCommand1>
     {
-        return Task.FromResult(new CommandResult(true));
+        public Task<CommandResult> HandleAsync(TestCommand1 command, CancellationToken cancellationToken)
+        {
+            return Task.FromResult(new CommandResult(true));
+        }
     }
 }
