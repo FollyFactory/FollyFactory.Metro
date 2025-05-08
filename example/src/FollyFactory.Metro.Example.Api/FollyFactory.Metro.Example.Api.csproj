@@ -11,7 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\src\FollyFactory.Metro.DependencyInjection.Microsoft\FollyFactory.Metro.DependencyInjection.Microsoft.csproj" />
+    <ProjectReference Include="..\..\..\src\FollyFactory.Metro.DI.Microsoft\FollyFactory.Metro.DI.Microsoft.csproj" />
     <ProjectReference Include="..\FollyFactory.Metro.Example.Application\FollyFactory.Metro.Example.Application.csproj" />
   </ItemGroup>
 

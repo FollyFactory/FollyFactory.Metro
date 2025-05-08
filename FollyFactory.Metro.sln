@@ -11,13 +11,14 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "misc", "misc", "{888634DD-3
 	ProjectSection(SolutionItems) = preProject
 		.editorconfig = .editorconfig
 		.github\workflows\ci.yml = .github\workflows\ci.yml
+		.github\workflows\release.yml = .github\workflows\release.yml
 		Directory.Build.props = Directory.Build.props
 		README.md = README.md
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FollyFactory.Metro", "src\FollyFactory.Metro\FollyFactory.Metro.csproj", "{EBE4ED37-A32F-4A5A-8015-34D83F517CA0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FollyFactory.Metro.DependencyInjection.Microsoft", "src\FollyFactory.Metro.DependencyInjection.Microsoft\FollyFactory.Metro.DependencyInjection.Microsoft.csproj", "{5E1390A7-AF32-4E5E-9DF5-7024209C75D1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FollyFactory.Metro.DI.Microsoft", "src\FollyFactory.Metro.DI.Microsoft\FollyFactory.Metro.DI.Microsoft.csproj", "{5E1390A7-AF32-4E5E-9DF5-7024209C75D1}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "example", "example", "{07042B12-2DA7-4864-86B4-D92F6E968A64}"
 EndProject

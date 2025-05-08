@@ -1,7 +1,7 @@
 ﻿using FollyFactory.Metro.Commands;
 using System.Diagnostics;
 
-namespace FollyFactory.Metro.DependencyInjection.Microsoft;
+namespace FollyFactory.Metro.DI.Microsoft;
 
 public class MicrosoftCommandDispatcher : ICommandDispatcher
 {

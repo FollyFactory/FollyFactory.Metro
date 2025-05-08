@@ -1,6 +1,6 @@
 ﻿using FollyFactory.Metro.Queries;
 
-namespace FollyFactory.Metro.DependencyInjection.Microsoft;
+namespace FollyFactory.Metro.DI.Microsoft;
 
 public class MicrosoftQueryProcessor : IQueryProcessor
 {

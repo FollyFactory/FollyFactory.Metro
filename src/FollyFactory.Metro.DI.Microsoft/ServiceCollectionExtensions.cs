@@ -1,7 +1,7 @@
 ﻿using FollyFactory.Metro.Commands;
 using System.Reflection;
 using FollyFactory.Metro;
-using FollyFactory.Metro.DependencyInjection.Microsoft;
+using FollyFactory.Metro.DI.Microsoft;
 using FollyFactory.Metro.Queries;
 
 // ReSharper disable once CheckNamespace

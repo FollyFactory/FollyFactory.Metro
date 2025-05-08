@@ -11,7 +11,6 @@
 		<DebugType>embedded</DebugType>
 		<RepositoryUrl>https://github.com/FollyFactory/FollyFactory.Metro</RepositoryUrl>
 		<RepositoryType>git</RepositoryType>
-
 	</PropertyGroup>
 
 	<PropertyGroup Condition="'$(TF_BUILD)' == 'true'">
