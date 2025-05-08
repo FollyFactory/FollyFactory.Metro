@@ -25,10 +25,4 @@ jobs:
     - name: Build
       run: dotnet build --no-restore
     - name: Test
-      run: dotnet test --no-build --verbosity normal --logger "junit;LogFilePath=test-results.xml"
-    - name: Publish Test Results
-      uses: dorny/test-reporter@v1
-      with:
-        name: .NET Tests
-        path: test-results.xml
-        reporter: junit
+      run: dotnet test --no-build
