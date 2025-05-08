@@ -5,5 +5,3 @@ public interface IValidationResult
     void AddError(string propertyName, string errorMessage);
     bool IsValid { get; set; }
 }
-
-public record ValidationError(string PropertyName, List<string> ErrorMessages);
