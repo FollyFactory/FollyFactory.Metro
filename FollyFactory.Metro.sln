@@ -32,6 +32,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FollyFactory.Metro.Example.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FollyFactory.Metro.UnitTests", "tests\FollyFactory.Metro.UnitTests\FollyFactory.Metro.UnitTests.csproj", "{1DAAAF33-CC36-4D02-A663-E2E60234410A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FollyFactory.Metro.Validation.Fluent", "src\FollyFactory.Metro.Validation.Fluent\FollyFactory.Metro.Validation.Fluent.csproj", "{8089BFB1-95CD-4E43-8AB1-3B2F3E62EA74}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -58,6 +60,10 @@ Global
 		{1DAAAF33-CC36-4D02-A663-E2E60234410A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1DAAAF33-CC36-4D02-A663-E2E60234410A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1DAAAF33-CC36-4D02-A663-E2E60234410A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8089BFB1-95CD-4E43-8AB1-3B2F3E62EA74}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8089BFB1-95CD-4E43-8AB1-3B2F3E62EA74}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8089BFB1-95CD-4E43-8AB1-3B2F3E62EA74}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8089BFB1-95CD-4E43-8AB1-3B2F3E62EA74}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -70,5 +76,6 @@ Global
 		{97E0F907-9667-45FB-8A02-50D6DC6A467C} = {F070AF3F-EA92-43E6-9DB5-FAAD338721F8}
 		{2129FE6A-5887-4AC3-9A18-0371C8940896} = {F070AF3F-EA92-43E6-9DB5-FAAD338721F8}
 		{1DAAAF33-CC36-4D02-A663-E2E60234410A} = {6B1ACA62-B188-4DFE-8EEA-41D9743E0A29}
+		{8089BFB1-95CD-4E43-8AB1-3B2F3E62EA74} = {D85BFAFE-60FB-4FC3-9F14-08D8CA677A9A}
 	EndGlobalSection
 EndGlobal
